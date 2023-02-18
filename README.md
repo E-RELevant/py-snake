@@ -18,6 +18,10 @@ In the beginning of the game, the snake's head is located in the center of the s
 
 ### ▶️ Interactions
 
+The following diagram illustrates the interactions between the game's objects and their effects
+
+![Alt text](./media/py-snake-diagram.svg)
+
 #### Snake eats an apple
 
 - In the round in which the snake ate the apple, the player receives a score equal to the square root of the snake's length.
@@ -29,11 +33,15 @@ In the beginning of the game, the snake's head is located in the center of the s
 
 - A new wall is added in its place the next round.
 
-#### A wall collided with the snake's body
+#### A wall colliding with an apple
+
+- A new apple is added in its place the next round.
+
+#### A wall colliding with the snake's body
 
 - The snake's tail will be cut off at the point of collision.
 
-#### Snake out of the boundaries of the board, collided with a wall or itself
+#### Snake's head is outside the board's boundaries, colliding with a wall or itself
 
 - Game over.
 
